@@ -1,0 +1,27 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="text-align: center; background-color:#C1F7DC">
+      <p>Favoritos</p>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="background-color:#C1F7DC">
+  <ion-card *ngFor="let c of fav" style="background-color:#000000">
+      <ion-card-content>
+          <ion-item style="background-color:#000000">
+            <ion-col item-start>
+            <img [src]=c.imagen>
+            </ion-col>
+            <h2 style="color:#ffffff">{{c.nombre}}</h2>
+            <p style="color:#ffffff">{{c.precio}}</p>
+            <p style="color:#ffffff">{{c.u}}</p>
+          </ion-item>
+        </ion-card-content>
+  </ion-card>
+  
+</ion-content>
